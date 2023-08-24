@@ -1,37 +1,86 @@
-![portada](https://github.com/Ironhack-Data-Madrid-Enero-2022/w3-pandas-project/blob/main/images/portada.jpg)
+# Data Cleaning Project: Shark Attack Analysis
 
-# W2 Project - Data cleaning & wrangling
+This project focuses on the cleaning and analysis of a shark attack dataset. The goal is to explore, clean, and visualize the data to gain insights into shark attacks in different geographical regions. Additionally, a comprehensive examination of shark species has been conducted.
 
-The goal of this project is to combine everything you have learned about data wrangling, cleaning, and manipulation with Pandas so you can see how it all works together. For this project, you will start with this messy data set Shark Attack. You will need to download it, import it, use your data wrangling skills to clean it up, prepare it to be analyzed, and then export it as a clean CSV data file. Some graphs to better understand the data will surely be useful!!
+## Dataset Description
 
-## TO DO's
+The dataset used for this project is located in the [attacks.csv] file and contains information about recorded shark attacks. The attributes included in the dataset are as follows:
 
-1. Explore the data and write down what you have found
-   - you can use: `df.describe()`, `df["column"]`, etc.
-1. Use at least 5 data cleaning techniques inside a file named `clean.ipynb`
-   - null values, columns drop, duplicated data, string manipulation, apply fn, categorize, regex, etc.
-1. Show data that validates the conclusions based on your hypoteses in a file named `analysis.ipynb`
+- Case Number: Unique identifier for each shark attack case.
+- Date: Date of the attack.
+- Year: Year in which the attack occurred.
+- Type: Type of the shark attack (e.g., provoked, unprovoked, etc.).
+- Country: Country where the attack took place.
+- Area: Specific geographic area where the attack occurred.
+- Location: Detailed location information about the attack.
+- Activity: Activity that the victim was engaged in at the time of the attack.
+- Name: Name of the victim (if available).
+- Sex: Gender of the victim.
+- Age: Age of the victim.
+- Injury: Description of the injuries caused by the attack.
+- Fatal (Y/N): Indicates whether the attack resulted in the death of the victim (Y/N).
+- Time: Time of the attack (if available).
+- Species: Shark species involved in the attack.
+- Investigator or Source: Source of the information about the attack.
+- pdf, href formula, href: Columns related to additional file and hyperlink information.
+- Case Number.1, Case Number.2, original order, Unnamed: 22, Unnamed: 23: Miscellaneous columns (not described in the dataset documentation).
+
+In addition, a comprehensive examination of shark species has been performed, including information such as species name, habitat, and behavior.
+
+## Dependencies and Environment Setup
+
+1. Make sure you have Python installed along with the following libraries:
+
+- Pandas
+- Numpy
+- Matplotlib
+- Seaborn
+
+2. Clone this repository to your local machine:
+
+```
+git clone https://github.com/your_username/your_project.git
+```
+
+3. Navigate to the project directory:
+
+```
+cd your_project
+```
+
+## Usage Instructions
+
+1. Execute the [script_name.py] file to load and clean the data:
+
+```
+python script_name.py
+```
+
+2. Once the data is cleaned, use the [notebook_name.ipynb] notebooks to perform data analysis and visualization:
+
+```
+jupyter notebook notebook_name.ipynb
+```
+
+## Results and Conclusions
+
+After analyzing the data on shark attacks, the following conclusions can be drawn:
+
+1. The most frequently documented shark species in the recorded attacks is the **Carcharodon carcharias** (Great White Shark), with a total of 635 attacks. This species is known for its aggressiveness and large size, averaging 4 to 6 meters in length and weighing up to 2 tons.
+
+2. Another species responsible for a significant number of attacks is the **Carcharias taurus** (Bull Shark) with 370 recorded attacks. Bull Sharks can grow over 3 meters in length and are known to be both curious and aggressive.
+
+3. The **Galeocerdo cuviers** (Tiger Shark) also stands out with 255 recorded attacks. These sharks are known for their aggressive behavior and their ability to adapt to different marine habitats.
+
+4. Several smaller shark species, such as the **Carcharhinus limbatus** (Blacktip Reef Shark) and the **Sphyrna mokarran** (Great Hammerhead Shark), are also present in the recorded attacks.
+
+It is important to note that these data represent recorded information on shark attacks and should not be generalized to all interactions between sharks and humans. Water safety is crucial, and it is recommended to follow appropriate guidelines and precautionary measures when swimming or diving in areas where sharks may be present.
 
 
-## Suggested Ways to Get Started
 
-- Examine the data and try to understand what the fields mean before diving into data cleaning and manipulation methods.
-- Break the project down into different steps - use the topics covered in the lessons to form a check list, add anything else you can think of that may be wrong with your data set, and then work through the check list.
-- Use the tools in your tool kit - your knowledge of Python, data structures, Pandas, and data wrangling.
-  Work through the lessons in class & ask questions when you need to! Think about adding relevant code to your project each night, instead of, you know... procrastinating.
-- Commit early, commit often, don’t be afraid of doing something incorrectly because you can always roll back to a previous version.
-- Consult documentation and resources provided to better understand the tools you are using and how to accomplish what you want.
+## Contributions
 
-## How to deliver the project
-
-1. Create a new repo with the name `data-cleaning-pandas` on your github account.
-   - Create a `README.md` file on repo root with project documentation. Make sure to include as much useful information as possible. Someone that finds the README.md should be able to fully get a gist of the project without browsing your files.
-   - Include a `.gitignore`
-   - At least 1 jupyter notebook is required
-   - Including your functions in a `src.py` is very, very highly reccommended (maybe even mandatory, check with your instructors)
-   - **DO NOT UPLOAD SHARKs ATTACK DATASET TO GITHUB**
-2. Open an `Issue` on this repo and paste your own repo's link.
-
+Contributions to this project are welcome. If you would like to suggest improvements, make changes, or add new features, you can submit a pull request for review.
 ## Links & Resources
 
 - <https://www.kaggle.com/teajay/global-shark-attacks>
